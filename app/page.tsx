@@ -72,14 +72,9 @@ export default function Home() {
                                     </div>
                                     <div className="mt-2">
                                         <p className="text-sm font-medium">
-                                            Telegram Integration for automated
-                                            messaging and bot workflows
+                                            Trigger Telegram notifications for key
+                                            events in AO-based dApps.
                                         </p>
-                                    </div>
-                                    <div className="mt-auto flex items-center text-sm text-gray-500">
-                                        <div className="flex items-center">
-                                            <span>10K+ People loved</span>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -100,14 +95,10 @@ export default function Home() {
                                     </div>
                                     <div className="mt-2">
                                         <p className="text-sm font-medium">
-                                            ARdrive launched storage automation
-                                            for permanent data archiving
+                                            Sync user-generated content from
+                                            Telegram to ArDrive and index it with
+                                            Ar.io for community access.
                                         </p>
-                                    </div>
-                                    <div className="mt-auto flex items-center text-sm text-gray-500">
-                                        <div className="flex items-center">
-                                            <span>14K+ People loved</span>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -128,14 +119,10 @@ export default function Home() {
                                     </div>
                                     <div className="mt-2">
                                         <p className="text-sm font-medium">
-                                            APM just launched monitoring
-                                            automation for developers
+                                            Auto-publish Dexi market outcomes to
+                                            ArDrive and Ar.io for permanent,
+                                            decentralized visibility.
                                         </p>
-                                    </div>
-                                    <div className="mt-auto flex items-center text-sm text-gray-500">
-                                        <div className="flex items-center">
-                                            <span>8K+ People loved</span>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -144,16 +131,20 @@ export default function Home() {
                             <div className="absolute top-[40%] left-[50%] transform -translate-x-1/2 w-[200px] h-[200px] bg-white rounded-3xl shadow-md p-5 z-20">
                                 <div className="pin"></div>
                                 <div className="flex flex-col h-full">
-                                    <div className="mt-2 text-center">
-                                        <p className="text-sm font-medium">
-                                            Flowweave helps users automate their
-                                            workflows and connect services
-                                        </p>
-                                    </div>
-                                    <div className="mt-auto flex items-center justify-center text-sm text-gray-500">
-                                        <div className="flex items-center">
-                                            <span>500+ Active Automations</span>
+
+                                    <div className="mt-2 text-center justify-center flex flex-col items-center">
+                                        <div className="flex items-start mb-2">
+                                            <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden">
+                                                <span className="text-blue-500 text-xl">
+                                                    +
+                                                </span>
+                                            </div>
                                         </div>
+                                        <p className="text-sm font-medium">
+                                            Trigger smart contract executions or
+                                            AO commands when new Arweave TXs meet
+                                            certain criteria.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -171,14 +162,10 @@ export default function Home() {
                                     </div>
                                     <div className="mt-2">
                                         <p className="text-sm font-medium">
-                                            Custom integration for your favorite
-                                            tools and services
+                                            Run CRON-based backups of your Permaweb
+                                            App metadata to ArDrive for disaster
+                                            recovery.
                                         </p>
-                                    </div>
-                                    <div className="mt-auto flex items-center text-sm text-gray-500">
-                                        <div className="flex items-center">
-                                            <span>50K+ People loved</span>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -196,14 +183,10 @@ export default function Home() {
                                     </div>
                                     <div className="mt-2">
                                         <p className="text-sm font-medium">
-                                            Automation templates to make your
-                                            workflow better
+                                            Automate publishing of AO program logs or
+                                            agent outputs to the permaweb via
+                                            Bundlr.
                                         </p>
-                                    </div>
-                                    <div className="mt-auto flex items-center text-sm text-gray-500">
-                                        <div className="flex items-center">
-                                            <span>25K+ People loved</span>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -229,30 +212,6 @@ export default function Home() {
                                 />
                             </div>
 
-                            {/* Placeholder Logo 1 */}
-                            <div className="absolute top-[60%] left-[35%] w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center z-30">
-                                <span className="text-gray-400 text-xs">
-                                    Logo 1
-                                </span>
-                            </div>
-
-                            {/* Placeholder Logo 2 */}
-                            <div className="absolute top-[65%] right-[30%] w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center z-30">
-                                <span className="text-gray-400 text-xs">
-                                    Logo 2
-                                </span>
-                            </div>
-
-                            {/* Botega Logo */}
-                            <div className="absolute top-[15%] left-[50%] transform -translate-x-1/2 shadow-md flex items-center justify-center z-30">
-                                <Image
-                                    src="/botega.png"
-                                    alt="Botega"
-                                    width={60}
-                                    height={40}
-                                />
-                            </div>
-
                             {/* Dexi Logo */}
                             <div className="absolute bottom-[20%] left-[40%] z-30">
                                 <Image
@@ -262,18 +221,7 @@ export default function Home() {
                                     height={40}
                                 />
                             </div>
-
-                            {/* Placeholder Logo 5 */}
-                            <div className="absolute bottom-[30%] right-[40%] w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center z-30">
-                                <span className="text-gray-400 text-xs">
-                                    Logo 5
-                                </span>
-                            </div>
                         </div>
-                    </div>
-
-                    <div className="text-center mt-12 mb-8 text-sm text-gray-500">
-                        It's free and takes less than a minute!
                     </div>
                 </main>
             </div>
