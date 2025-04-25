@@ -96,8 +96,7 @@ export default function Home() {
                                     <div className="mt-2">
                                         <p className="text-sm font-medium">
                                             Sync user-generated content from
-                                            Telegram to ArDrive and index it with
-                                            Ar.io for community access.
+                                            Telegram to ArDrive
                                         </p>
                                     </div>
                                 </div>
@@ -120,8 +119,8 @@ export default function Home() {
                                     <div className="mt-2">
                                         <p className="text-sm font-medium">
                                             Auto-publish Dexi market outcomes to
-                                            ArDrive and Ar.io for permanent,
-                                            decentralized visibility.
+                                            ArDrive and Add notifications to
+                                            Telegram
                                         </p>
                                     </div>
                                 </div>
@@ -142,8 +141,7 @@ export default function Home() {
                                         </div>
                                         <p className="text-sm font-medium">
                                             Trigger smart contract executions or
-                                            AO commands when new Arweave TXs meet
-                                            certain criteria.
+                                            AO commands on conditions
                                         </p>
                                     </div>
                                 </div>
@@ -162,9 +160,8 @@ export default function Home() {
                                     </div>
                                     <div className="mt-2">
                                         <p className="text-sm font-medium">
-                                            Run CRON-based backups of your Permaweb
-                                            App metadata to ArDrive for disaster
-                                            recovery.
+                                            Run CRON-based actions on your Permaweb
+                                            App
                                         </p>
                                     </div>
                                 </div>
@@ -183,9 +180,8 @@ export default function Home() {
                                     </div>
                                     <div className="mt-2">
                                         <p className="text-sm font-medium">
-                                            Automate publishing of AO program logs or
-                                            agent outputs to the permaweb via
-                                            Bundlr.
+                                            Make Automated DeFi Bots for your
+                                            Permaweb App
                                         </p>
                                     </div>
                                 </div>
