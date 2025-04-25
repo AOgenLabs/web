@@ -1,7 +1,5 @@
 import Image from "next/image";
-import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 export default function Home() {
     return (
@@ -13,7 +11,7 @@ export default function Home() {
                     <div className="flex items-center justify-center flex-1">
                         <div className="flex items-center space-x-2">
                             <Image
-                                src="/logo.svg"
+                                src="/logo.png"
                                 alt="Flowweave Logo"
                                 width={32}
                                 height={32}
@@ -23,30 +21,10 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-end flex-1 space-x-4">
-                        <div className="relative">
-                            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
-                            <Input
-                                className="w-64 pl-10 rounded-full bg-gray-100 border-none"
-                                placeholder="Search here"
-                            />
-                        </div>
-                        <Button className="rounded-full bg-black text-white hover:bg-black/90">
-                            Let's Get started
-                        </Button>
-                    </div>
+                    <div className="flex-1"></div>
                 </header>
 
                 <main className="px-8 pt-16 pb-16 relative">
-                    <div className="text-center mb-4">
-                        <div className="inline-flex items-center justify-center space-x-2 mb-2">
-                            <span className="text-red-500">❤</span>
-                            <span className="text-sm">
-                                Trust & Loved by 1M+ People
-                            </span>
-                        </div>
-                    </div>
-
                     <div className="text-center max-w-5xl mx-auto mb-6">
                         <h1 className="text-6xl font-bold tracking-tight">
                             Introducing{" "}
