@@ -63,11 +63,12 @@ export default function Home() {
                             Weaving the future of automation, one flow at a time
                         </p>
                     </div>
-
                     <div className="text-center mb-8">
-                        <Button className="rounded-full bg-purple-500 hover:bg-purple-600 text-white px-8 py-6 text-lg">
-                            Start Automating
-                        </Button>
+                        <a href="https://flowweave_arlink.arweave.net/" target="_blank">
+                            <Button className="rounded-full bg-purple-500 hover:bg-purple-600 text-white px-8 py-6 text-lg">
+                                Start Automating
+                            </Button>
+                        </a>
                     </div>
 
                     {/* Dotted grid with pinned cards */}
