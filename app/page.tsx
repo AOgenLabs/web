@@ -1,0 +1,297 @@
+import Image from "next/image";
+import { Search } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+
+export default function Home() {
+    return (
+        <div className="min-h-screen bg-gray-100">
+            <div className="min-h-screen bg-white overflow-x-hidden">
+                <header className="flex items-center justify-between px-8 py-6">
+                    <div className="flex-1"></div>
+
+                    <div className="flex items-center justify-center flex-1">
+                        <div className="flex items-center space-x-2">
+                            <Image
+                                src="/logo.svg"
+                                alt="Flowweave Logo"
+                                width={32}
+                                height={32}
+                                className="h-8 w-auto"
+                            />
+                            <span className="font-bold text-xl">Flowweave</span>
+                        </div>
+                    </div>
+
+                    <div className="flex items-center justify-end flex-1 space-x-4">
+                        <div className="relative">
+                            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+                            <Input
+                                className="w-64 pl-10 rounded-full bg-gray-100 border-none"
+                                placeholder="Search here"
+                            />
+                        </div>
+                        <Button className="rounded-full bg-black text-white hover:bg-black/90">
+                            Let's Get started
+                        </Button>
+                    </div>
+                </header>
+
+                <main className="px-8 pt-16 pb-16 relative">
+                    <div className="text-center mb-4">
+                        <div className="inline-flex items-center justify-center space-x-2 mb-2">
+                            <span className="text-red-500">❤</span>
+                            <span className="text-sm">
+                                Trust & Loved by 1M+ People
+                            </span>
+                        </div>
+                    </div>
+
+                    <div className="text-center max-w-5xl mx-auto mb-6">
+                        <h1 className="text-6xl font-bold tracking-tight">
+                            Introducing{" "}
+                            <span className="text-purple-500">Flowweave</span>,
+                            <br />
+                            The{" "}
+                            <span className="text-emerald-500">
+                                automation
+                            </span>{" "}
+                            way to{" "}
+                            <span className="text-blue-500">connect.</span>
+                        </h1>
+                        <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
+                            Weaving the future of automation, one flow at a time
+                        </p>
+                    </div>
+
+                    <div className="text-center mb-8">
+                        <Button className="rounded-full bg-purple-500 hover:bg-purple-600 text-white px-8 py-6 text-lg">
+                            Start Automating
+                        </Button>
+                    </div>
+
+                    {/* Dotted grid with pinned cards */}
+                    <div className="relative h-[700px] mt-8">
+                        {/* Simple dotted grid background */}
+                        <div className="dotted-grid-bg"></div>
+
+                        {/* Application cards */}
+                        <div className="absolute top-0 left-0 w-full h-full">
+                            {/* Card 1 - Top Left */}
+                            <div className="absolute top-[5%] left-[8%] w-[200px] h-[200px] bg-white rounded-3xl shadow-md p-5 transform -rotate-6 z-10">
+                                <div className="pin"></div>
+                                <div className="flex flex-col h-full">
+                                    <div className="flex items-start mb-2">
+                                        <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden">
+                                            <Image
+                                                src="/telegram-icon.svg"
+                                                alt="Telegram"
+                                                width={24}
+                                                height={24}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="mt-2">
+                                        <p className="text-sm font-medium">
+                                            Telegram Integration for automated
+                                            messaging and bot workflows
+                                        </p>
+                                    </div>
+                                    <div className="mt-auto flex items-center text-sm text-gray-500">
+                                        <div className="flex items-center">
+                                            <span>10K+ People loved</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Card 2 - Middle Left */}
+                            <div className="absolute top-[30%] left-[18%] w-[200px] h-[200px] bg-white rounded-3xl shadow-md p-5 transform rotate-3 z-10">
+                                <div className="pin"></div>
+                                <div className="flex flex-col h-full">
+                                    <div className="flex items-start mb-2">
+                                        <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center overflow-hidden">
+                                            <Image
+                                                src="/ardrive-icon.svg"
+                                                alt="ARdrive"
+                                                width={24}
+                                                height={24}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="mt-2">
+                                        <p className="text-sm font-medium">
+                                            ARdrive launched storage automation
+                                            for permanent data archiving
+                                        </p>
+                                    </div>
+                                    <div className="mt-auto flex items-center text-sm text-gray-500">
+                                        <div className="flex items-center">
+                                            <span>14K+ People loved</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Card 3 - Bottom Left */}
+                            <div className="absolute bottom-[10%] left-[12%] w-[200px] h-[200px] bg-white rounded-3xl shadow-md p-5 transform rotate-6 z-10">
+                                <div className="pin"></div>
+                                <div className="flex flex-col h-full">
+                                    <div className="flex items-start mb-2">
+                                        <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center overflow-hidden">
+                                            <Image
+                                                src="/apm-icon.svg"
+                                                alt="APM"
+                                                width={24}
+                                                height={24}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="mt-2">
+                                        <p className="text-sm font-medium">
+                                            APM just launched monitoring
+                                            automation for developers
+                                        </p>
+                                    </div>
+                                    <div className="mt-auto flex items-center text-sm text-gray-500">
+                                        <div className="flex items-center">
+                                            <span>8K+ People loved</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Card 4 - Center */}
+                            <div className="absolute top-[40%] left-[50%] transform -translate-x-1/2 w-[200px] h-[200px] bg-white rounded-3xl shadow-md p-5 z-20">
+                                <div className="pin"></div>
+                                <div className="flex flex-col h-full">
+                                    <div className="mt-2 text-center">
+                                        <p className="text-sm font-medium">
+                                            Flowweave helps users automate their
+                                            workflows and connect services
+                                        </p>
+                                    </div>
+                                    <div className="mt-auto flex items-center justify-center text-sm text-gray-500">
+                                        <div className="flex items-center">
+                                            <span>500+ Active Automations</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Card 5 - Top Right */}
+                            <div className="absolute top-[8%] right-[12%] w-[200px] h-[200px] bg-white rounded-3xl shadow-md p-5 transform rotate-6 z-10">
+                                <div className="pin"></div>
+                                <div className="flex flex-col h-full">
+                                    <div className="flex items-start mb-2">
+                                        <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center overflow-hidden">
+                                            <span className="text-red-500 text-xl">
+                                                +
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div className="mt-2">
+                                        <p className="text-sm font-medium">
+                                            Custom integration for your favorite
+                                            tools and services
+                                        </p>
+                                    </div>
+                                    <div className="mt-auto flex items-center text-sm text-gray-500">
+                                        <div className="flex items-center">
+                                            <span>50K+ People loved</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Card 6 - Bottom Right */}
+                            <div className="absolute bottom-[15%] right-[15%] w-[200px] h-[200px] bg-white rounded-3xl shadow-md p-5 transform -rotate-6 z-10">
+                                <div className="pin"></div>
+                                <div className="flex flex-col h-full">
+                                    <div className="flex items-start mb-2">
+                                        <div className="h-12 w-12 rounded-full bg-yellow-100 flex items-center justify-center overflow-hidden">
+                                            <span className="text-yellow-500 text-xl">
+                                                +
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div className="mt-2">
+                                        <p className="text-sm font-medium">
+                                            Automation templates to make your
+                                            workflow better
+                                        </p>
+                                    </div>
+                                    <div className="mt-auto flex items-center text-sm text-gray-500">
+                                        <div className="flex items-center">
+                                            <span>25K+ People loved</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Small Logos */}
+                            {/* Telegram Logo */}
+                            <div className="absolute top-[22%] left-[35%] w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center z-30">
+                                <Image
+                                    src="/telegram-icon.svg"
+                                    alt="Telegram"
+                                    width={20}
+                                    height={20}
+                                />
+                            </div>
+
+                            {/* Gmail Logo */}
+                            <div className="absolute top-[25%] right-[35%] w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center z-30">
+                                <Image
+                                    src="/gmail-icon.svg"
+                                    alt="Gmail"
+                                    width={20}
+                                    height={20}
+                                />
+                            </div>
+
+                            {/* Placeholder Logo 1 */}
+                            <div className="absolute top-[60%] left-[35%] w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center z-30">
+                                <span className="text-gray-400 text-xs">
+                                    Logo 1
+                                </span>
+                            </div>
+
+                            {/* Placeholder Logo 2 */}
+                            <div className="absolute top-[65%] right-[30%] w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center z-30">
+                                <span className="text-gray-400 text-xs">
+                                    Logo 2
+                                </span>
+                            </div>
+
+                            {/* Placeholder Logo 3 */}
+                            <div className="absolute top-[15%] left-[50%] transform -translate-x-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center z-30">
+                                <span className="text-gray-400 text-xs">
+                                    Logo 3
+                                </span>
+                            </div>
+
+                            {/* Placeholder Logo 4 */}
+                            <div className="absolute bottom-[20%] left-[40%] w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center z-30">
+                                <span className="text-gray-400 text-xs">
+                                    Logo 4
+                                </span>
+                            </div>
+
+                            {/* Placeholder Logo 5 */}
+                            <div className="absolute bottom-[30%] right-[40%] w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center z-30">
+                                <span className="text-gray-400 text-xs">
+                                    Logo 5
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="text-center mt-12 mb-8 text-sm text-gray-500">
+                        It's free and takes less than a minute!
+                    </div>
+                </main>
+            </div>
+        </div>
+    );
+}
