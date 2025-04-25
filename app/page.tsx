@@ -9,15 +9,15 @@ export default function Home() {
                     <div className="flex-1"></div>
 
                     <div className="flex items-center justify-center flex-1">
-                        <div className="flex items-center space-x-2">
+                        <div className="flex items-center space-x-3">
                             <Image
                                 src="/logo.png"
                                 alt="Flowweave Logo"
-                                width={32}
-                                height={32}
-                                className="h-8 w-auto"
+                                width={80}
+                                height={80}
+                                className="h-20 w-auto"
                             />
-                            <span className="font-bold text-xl">Flowweave</span>
+                            <span className="font-bold text-2xl">Flowweave</span>
                         </div>
                     </div>
 
@@ -242,18 +242,24 @@ export default function Home() {
                                 </span>
                             </div>
 
-                            {/* Placeholder Logo 3 */}
-                            <div className="absolute top-[15%] left-[50%] transform -translate-x-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center z-30">
-                                <span className="text-gray-400 text-xs">
-                                    Logo 3
-                                </span>
+                            {/* Botega Logo */}
+                            <div className="absolute top-[15%] left-[50%] transform -translate-x-1/2 shadow-md flex items-center justify-center z-30">
+                                <Image
+                                    src="/botega.png"
+                                    alt="Botega"
+                                    width={60}
+                                    height={40}
+                                />
                             </div>
 
-                            {/* Placeholder Logo 4 */}
-                            <div className="absolute bottom-[20%] left-[40%] w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center z-30">
-                                <span className="text-gray-400 text-xs">
-                                    Logo 4
-                                </span>
+                            {/* Dexi Logo */}
+                            <div className="absolute bottom-[20%] left-[40%] z-30">
+                                <Image
+                                    src="/dexi.png"
+                                    alt="Dexi"
+                                    width={60}
+                                    height={40}
+                                />
                             </div>
 
                             {/* Placeholder Logo 5 */}
