@@ -42,7 +42,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="text-center mb-8">
-                        <a href="https://flowweave_arlink.arweave.net/" target="_blank">
+                        <a href="https://rahulbarmann-flowweave_arlink.arweave.net/" target="_blank">
                             <Button className="rounded-full bg-purple-500 hover:bg-purple-600 text-white px-8 py-6 text-lg">
                                 Start Automating
                             </Button>
