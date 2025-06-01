@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { WaitlistForm } from "@/components/WaitlistForm";
 
 export default function Home() {
     return (
@@ -17,7 +18,9 @@ export default function Home() {
                                 height={80}
                                 className="h-20 w-auto"
                             />
-                            <span className="font-bold text-2xl">Flowweave</span>
+                            <span className="font-bold text-2xl">
+                                Flowweave
+                            </span>
                         </div>
                     </div>
 
@@ -42,7 +45,10 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="text-center mb-8">
-                        <a href="https://rahulbarmann-flowweave_arlink.arweave.net/" target="_blank">
+                        <a
+                            href="https://rahulbarmann-flowweave_arlink.arweave.net/"
+                            target="_blank"
+                        >
                             <Button className="rounded-full bg-purple-500 hover:bg-purple-600 text-white px-8 py-6 text-lg">
                                 Start Automating
                             </Button>
@@ -72,8 +78,8 @@ export default function Home() {
                                     </div>
                                     <div className="mt-2">
                                         <p className="text-sm font-medium">
-                                            Trigger Telegram notifications for key
-                                            events in AO-based dApps.
+                                            Trigger Telegram notifications for
+                                            key events in AO-based dApps.
                                         </p>
                                     </div>
                                 </div>
@@ -130,7 +136,6 @@ export default function Home() {
                             <div className="absolute top-[40%] left-[50%] transform -translate-x-1/2 w-[200px] h-[200px] bg-white rounded-3xl shadow-md p-5 z-20">
                                 <div className="pin"></div>
                                 <div className="flex flex-col h-full">
-
                                     <div className="mt-2 text-center justify-center flex flex-col items-center">
                                         <div className="flex items-start mb-2">
                                             <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden">
@@ -160,8 +165,8 @@ export default function Home() {
                                     </div>
                                     <div className="mt-2">
                                         <p className="text-sm font-medium">
-                                            Run CRON-based actions on your Permaweb
-                                            App
+                                            Run CRON-based actions on your
+                                            Permaweb App
                                         </p>
                                     </div>
                                 </div>
@@ -218,6 +223,11 @@ export default function Home() {
                                 />
                             </div>
                         </div>
+                    </div>
+
+                    {/* Waitlist Section */}
+                    <div className="mt-24 mb-16">
+                        <WaitlistForm />
                     </div>
                 </main>
             </div>
